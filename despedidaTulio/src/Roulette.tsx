@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Wheel } from "react-custom-roulette";
 import style from "./app.module.css";
-import pointer from "./assets/Left Icon 1.jpg";
+import pointer from "./assets/pointer.png";
 
 const data = [
   {
@@ -61,7 +61,7 @@ const Roulette: React.FC = () => {
 
   const pointerProps = {
     src: pointer,
-    style: { width: "30px", height: "30px" },
+    style: { width: "40px", height: "40px" },
   };
 
   return (
