@@ -1,0 +1,40 @@
+.main {
+  width: 100vw;
+  background-color: darkslategray;
+}
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+.roulette {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura total de la pantalla para centrar verticalmente */
+  flex-direction: column; /* Asegura que el botón aparezca debajo de la ruleta */
+}
+.buttonSpin {
+  border-radius: 200px;
+  border-width: 0px;
+  background-color: white;
+}
+.winningText {
+  margin-top: 20px; /* Espacio entre la ruleta y el texto */
+  font-size: 24px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+  text-align: center; /* Alinear al centro */
+}
