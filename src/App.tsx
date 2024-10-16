@@ -51,7 +51,7 @@ const App: React.FC = () => {
           </div>
           {/* Texto superpuesto */}
           <div className={style.textHeader}>
-            <h1 className={style.title}>Titulo</h1>
+            <h1 className={style.title}>Titulfdwo</h1>
             <p className={style.description}>Descripcion de alguna boludez</p>
           </div>
 
