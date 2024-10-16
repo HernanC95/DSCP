@@ -12,9 +12,10 @@
 
 .header {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh; /* Full height for the header section */
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -24,21 +25,36 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   z-index: 1; /* Place below textHeader */
   filter: brightness(0.5); /* Darken the GIFs */
 }
-
+.giphyBackground2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1; /* Place below textHeader */
+  filter: brightness(0.5); /* Darken the GIFs */
+}
 .giphyBackground iframe {
   width: 100vw; /* Aseguramos que los iframes ocupen todo el ancho */
-  height: 25vh; /* Ocupan toda la altura del contenedor */
   border: none; /* Elimina el borde predeterminado */
   pointer-events: none;
+  scale: 1.5;
 }
-
+.giphyBackground2 iframe {
+  width: 100vw; /* Aseguramos que los iframes ocupen todo el ancho */
+  border: none; /* Elimina el borde predeterminado */
+  pointer-events: none;
+  scale: 1.5;
+}
 .textHeader {
   position: relative;
   z-index: 2; /* Ensure it stays above the GIFs */
@@ -82,4 +98,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-width: 0px;
+  background-color: rgb(36, 65, 107);
+}
+.buttonSpin {
+  background-color: none;
+  border-radius: 200px;
+}
+.winningText {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 20px;
 }

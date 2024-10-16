@@ -76,7 +76,6 @@ const Roulette: React.FC = () => {
             setWinningOption(data[prizeNumber].option); // Actualiza la opción ganadora
           }}
           outerBorderWidth={2}
-          innerBorderWidth={5}
           radiusLineWidth={0}
           pointerProps={pointerProps}
         />
