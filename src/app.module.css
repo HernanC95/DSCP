@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Esto asegura que no haya márgenes o padding extra */
+}
+.main {
+  position: relative;
+  background-color: rgb(36, 65, 107);
+  width: 100vw;
+  height: 100vh; /* Ocupar toda la altura de la pantalla */
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* Full height for the header section */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.giphyBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1; /* Place below textHeader */
+  filter: brightness(0.5); /* Darken the GIFs */
+}
+.giphyBackground2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1; /* Place below textHeader */
+  filter: brightness(0.5); /* Darken the GIFs */
+}
+.giphyBackground iframe {
+  width: 100vw; /* Aseguramos que los iframes ocupen todo el ancho */
+  border: none; /* Elimina el borde predeterminado */
+  pointer-events: none;
+  scale: 1.5;
+}
+.giphyBackground2 iframe {
+  width: 100vw; /* Aseguramos que los iframes ocupen todo el ancho */
+  border: none; /* Elimina el borde predeterminado */
+  pointer-events: none;
+  scale: 1.5;
+}
+.textHeader {
+  position: relative;
+  z-index: 2; /* Ensure it stays above the GIFs */
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.scrollDown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3; /* On top of everything */
+  width: 40px; /* Adjust the size as needed */
+  height: 40px;
+  animation: bounce 2s infinite; /* Apply the animation */
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(-50%, 0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translate(-50%, 10px); /* Move down by 10px */
+  }
+}
+.roulette {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-width: 0px;
+  background-color: rgb(36, 65, 107);
+}
+.buttonSpin {
+  background-color: none;
+  border-radius: 200px;
+}
+.winningText {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 20px;
+}
