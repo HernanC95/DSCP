@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; /* Esto asegura que no haya márgenes o padding extra */
 }
+body {
+  font-family: "Arial", sans-serif;
+}
 .main {
   position: relative;
   background-color: rgb(36, 65, 107);
@@ -76,52 +79,63 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border-width: 0px;
 }
 .buttonSpin {
-  background-color: none;
-  border-radius: 1000px;
+  background-color: #a5aea2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttonSpin:hover {
+  background-color: #a5aea2;
 }
 .winningText {
   font-size: 1.5rem;
-  color: white;
+  color: #2c3e50;
   margin-top: 20px;
 }
-.titleRoulette {
-  font-size: 1.5rem;
-  color: white;
-  margin-top: 20px;
-}
+
 .subtitleRoulette {
   font-size: 1.2rem;
-  color: white;
-  align-self: flex-start;
-  margin-top: 20px;
+  color: #2c3e50;
   margin-bottom: 10px;
 }
+.titleRoulette {
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .containerText {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80vw;
   background-color: white;
-  padding: 7px;
-  border-radius: 10px; /* Para que las palabras largas no se desborden */
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  text-align: justify;
+  margin-top: 10px;
 }
 
 .textRoulette {
-  text-align: justify;
-  font-size: 15px;
-  color: rgb(36, 65, 107);
-  word-wrap: break-word;
+  color: #34495e;
+  font-size: 14px;
+}
+
+.pointer {
+  width: 50px;
+  height: 50px;
 }
 .containerRoulette {
-  min-height: 100vh;
-  width: 100vw;
+  background-color: #a5aea2;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(36, 65, 107);
-  padding: 20px;
-  gap: 50px;
+  gap: 20px;
+  min-height: 100vh;
+  min-width: 300px;
 }
