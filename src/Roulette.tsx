@@ -81,7 +81,12 @@ const Roulette: React.FC = () => {
 
   const pointerProps = {
     src: pointer,
-    style: { width: "40px", height: "40px" },
+    style: {
+      width: "40px",
+      height: "40px",
+      marginTop: "10px",
+      marginRight: "20px",
+    },
   };
 
   return (
