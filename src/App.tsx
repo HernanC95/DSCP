@@ -14,12 +14,10 @@ const App: React.FC = () => {
             <iframe
               src="https://giphy.com/embed/S65JaHHLHKjjQZ7Ee7"
               frameBorder="0"
-              title="Giphy 1"
             ></iframe>
             <iframe
               src="https://giphy.com/embed/c6Xp82Z3bDGER60Ask"
               frameBorder="0"
-              title="Giphy 2"
             ></iframe>
             <iframe
               src="https://giphy.com/embed/3o7btWxDlmXDVMdHLW"
@@ -34,14 +32,14 @@ const App: React.FC = () => {
             <p className={style.description}>
               Nuestro amigo perdió la cabeza, ahora se quiere casar
             </p>
+            <img
+              src={scrollDown}
+              alt="Scroll down"
+              className={style.scrollDown}
+            />
           </div>
 
           {/* Scroll Down */}
-          <img
-            src={scrollDown}
-            alt="Scroll down"
-            className={style.scrollDown}
-          />
         </div>
       </div>
       <Roulette />
