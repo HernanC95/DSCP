@@ -2,6 +2,7 @@ import React from "react";
 import style from "./app.module.css";
 import Roulette from "./Roulette";
 import scrollDown from "./assets/scrollDown.png";
+import tulio from "./assets/tulio.jpg";
 
 const App: React.FC = () => {
   return (
@@ -28,8 +29,11 @@ const App: React.FC = () => {
 
           {/* Texto superpuesto */}
           <div className={style.textHeader}>
-            <h1 className={style.title}>TITULO</h1>
-            <p className={style.description}>Descripcion de alguna boludez</p>
+            <h1 className={style.title}>LIBERTAD EN PELIGRO</h1>
+            <img src={tulio} alt="imgTulio" className={style.imgTulio} />
+            <p className={style.description}>
+              Nuestro amigo perdió la cabeza, ahora se quiere casar
+            </p>
           </div>
 
           {/* Scroll Down */}

@@ -5,64 +5,122 @@ import pointer from "./assets/pointer.png";
 
 const data = [
   {
-    option: "Prenda 1",
+    option: "1",
     style: { backgroundColor: "#597d71", textColor: "#2C3E50" },
-    description:
-      "Descripción de la prenda 1: Camiseta de algodón cómoda y ligera.",
+    description: "Hacer fondo blanco con…",
   },
   {
-    option: "Prenda 2",
+    option: "2",
     style: { backgroundColor: "#feb897", textColor: "#2C3E50" },
-    description:
-      "Descripción de la prenda 2: Sudadera con capucha ideal para el invierno.",
+    description: "Toma el que gira la ruleta",
   },
   {
-    option: "Prenda 3",
+    option: "3",
     style: { backgroundColor: "#acaf9c", textColor: "#2C3E50" },
     description:
-      "Descripción de la prenda 3: Pantalones vaqueros de corte ajustado.",
+      "Llamar a Abri y decirle cuantos vasos vas tomando, después tomar",
   },
   {
-    option: "Prenda 4",
+    option: "4",
     style: { backgroundColor: "#d2caaf", textColor: "#2C3E50" },
-    description:
-      "Descripción de la prenda 4: Chaqueta impermeable para días lluviosos.",
+    description: "3 burpees",
   },
   {
-    option: "Prenda 5",
+    option: "5",
     style: { backgroundColor: "#597d71", textColor: "#2C3E50" },
-    description:
-      "Descripción de la prenda 5: Camisa de vestir con diseño clásico.",
+    description: "Tequilazo (o similar)",
   },
   {
-    option: "Prenda 6",
+    option: "6",
     style: { backgroundColor: "#feb897", textColor: "#2C3E50" },
     description:
-      "Descripción de la prenda 6: Pantalones cortos cómodos para el verano.",
+      "Contar un secreto picante en un minuto. Sino contesta soplamoco",
   },
   {
-    option: "Prenda 7",
+    option: "7",
+    style: { backgroundColor: "#d2caaf", textColor: "#2C3E50" },
+    description: "Comodín",
+  },
+  {
+    option: "8",
+    style: { backgroundColor: "#E6D9CC", textColor: "#2C3E50" },
+    description: "Simula sexo oral con tu dedo.",
+  },
+  {
+    option: "9",
+    style: { backgroundColor: "#99b6a2", textColor: "#2C3E50" },
+    description: "Graba un gemido y mándalo como mensaje de voz",
+  },
+  {
+    option: "10",
+    style: { backgroundColor: "#fbefdd", textColor: "#2C3E50" },
+    description: "Alguien del grupo tiene que darte una nalgada",
+  },
+  {
+    option: "11",
+    style: { backgroundColor: "#597d71", textColor: "#2C3E50" },
+    description: "Cuenta una anecdota sexual",
+  },
+  {
+    option: "12",
+    style: { backgroundColor: "#feb897", textColor: "#2C3E50" },
+    description: "Deja que el grupo decida un desafio",
+  },
+  {
+    option: "13",
+    style: { backgroundColor: "#acaf9c", textColor: "#2C3E50" },
+    description: "Cuenta al grupo el lugar mas raro donde has tenido sexo",
+  },
+  {
+    option: "14",
     style: { backgroundColor: "#d2caaf", textColor: "#2C3E50" },
     description:
-      "Descripción de la prenda 7: Bufanda de lana para mantener el calor.",
+      "Deja que otro jugador te tatue lo que quiera con un boligrafo",
   },
   {
-    option: "Prenda 8",
+    option: "15",
+    style: { backgroundColor: "#597d71", textColor: "#2C3E50" },
+    description: "Juega a piedra papel o tijera con alguien. El perdedor toma.",
+  },
+  {
+    option: "16",
+    style: { backgroundColor: "#feb897", textColor: "#2C3E50" },
+    description: "Contar un chiste, de lo contrario fondo blanco",
+  },
+  {
+    option: "17",
+    style: { backgroundColor: "#d2caaf", textColor: "#2C3E50" },
+    description: "Entrar a comprar vestido de mujer",
+  },
+  {
+    option: "18",
     style: { backgroundColor: "#E6D9CC", textColor: "#2C3E50" },
-    description:
-      "Descripción de la prenda 8: Gorro de invierno hecho de tejido suave.",
+    description: "Hacerse pasar por gay",
   },
   {
-    option: "Prenda 9",
+    option: "19",
     style: { backgroundColor: "#99b6a2", textColor: "#2C3E50" },
-    description:
-      "Descripción de la prenda 9: Vestido de verano ligero y colorido.",
+    description: "Todos fondo blanco",
   },
   {
-    option: "Prenda 10",
+    option: "20",
     style: { backgroundColor: "#fbefdd", textColor: "#2C3E50" },
-    description:
-      "Descripción de la prenda 10: Zapatillas deportivas con amortiguación extra.",
+    description: "Fondo blanco y volver a girar",
+  },
+  {
+    option: "21",
+    style: { backgroundColor: "#597d71", textColor: "#2C3E50" },
+    description: "Turno libre",
+  },
+  {
+    option: "22",
+    style: { backgroundColor: "#feb897", textColor: "#2C3E50" },
+    description: "Tener que hacer un baile",
+  },
+  {
+    option: "23",
+    style: { backgroundColor: "#acaf9c", textColor: "#2C3E50" },
+    description: "Que diga un trabalenguas de lo contrario fondo blanco",
   },
 ];
 

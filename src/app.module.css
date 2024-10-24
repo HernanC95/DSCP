@@ -47,8 +47,9 @@ body {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .description {
@@ -138,4 +139,8 @@ body {
   gap: 20px;
   min-height: 100vh;
   min-width: 300px;
+}
+.imgTulio {
+  width: 90vw; /* Adjust the size as needed */
+  height: 250px;
 }
