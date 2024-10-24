@@ -20,9 +20,9 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; /* Full height for the header section */
   overflow: hidden;
+  padding-top: 2rem;
 }
 
 .giphyBackground {
