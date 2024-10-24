@@ -11,9 +11,18 @@ const App: React.FC = () => {
         <div className={style.header}>
           {/* GIFs de fondo */}
           <div className={style.giphyBackground}>
-            <iframe src="https://giphy.com/embed/S65JaHHLHKjjQZ7Ee7"></iframe>
-            <iframe src="https://giphy.com/embed/c6Xp82Z3bDGER60Ask"></iframe>
-            <iframe src="https://giphy.com/embed/3o7btWxDlmXDVMdHLW"></iframe>
+            <iframe
+              src="https://giphy.com/embed/S65JaHHLHKjjQZ7Ee7"
+              className={style.iframe1}
+            ></iframe>
+            <iframe
+              src="https://giphy.com/embed/c6Xp82Z3bDGER60Ask"
+              className={style.iframe2}
+            ></iframe>
+            <iframe
+              src="https://giphy.com/embed/3o7btWxDlmXDVMdHLW"
+              className={style.iframe3}
+            ></iframe>
           </div>
           {/* Texto superpuesto */}
           <div className={style.textHeader}>

@@ -4,10 +4,12 @@
   box-sizing: border-box; /* Esto asegura que no haya márgenes o padding extra */
 }
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Arial", sans-serif;
 }
 .main {
-  background-color: rgb(36, 65, 107);
+  background-color: rgb(0, 0, 0);
   width: 100vw;
   height: 100vh;
   flex-direction: column;
@@ -22,29 +24,44 @@ body {
   flex-direction: column;
   align-items: center; /* Full height for the header section */
   overflow: hidden;
-  padding-top: 2rem;
 }
 
 .giphyBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
-  z-index: 1; /* Place below textHeader */
-  filter: brightness(0.5); /* Darken the GIFs */
+  height: 100vh;
+  width: 100vw;
+  position: absolute; /* Mantén los iframes en el fondo */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Asegura que los iframes estén detrás del texto */
+  filter: brightness(0.5); /* Oscurecer los GIFs */
 }
-.giphyBackground iframe {
-  width: 100vw; /* Aseguramos que los iframes ocupen todo el ancho */
-  border: none; /* Elimina el borde predeterminado */
-  height: 34vh;
-  scale: 1.5;
+
+.iframe1,
+.iframe2,
+.iframe3,
+.iframe4 {
+  flex: 1;
+  width: 100%;
+  border: none;
 }
+
 .textHeader {
-  position: relative;
-  z-index: 2; /* Ensure it stays above the GIFs */
+  position: relative; /* O puede ser absolute si necesitas moverlo con precisión */
+  z-index: 2; /* Asegura que el texto esté por encima de los iframes */
   color: white;
   text-align: center;
+}
+
+.header {
+  position: relative; /* Asegúrate de que el header esté en el flujo normal del documento */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centrar el contenido del header */
 }
 
 .title {
@@ -81,9 +98,7 @@ body {
 }
 .buttonSpin {
   background-color: #a5aea2;
-  padding: 10px 20px;
   border: none;
-  border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -106,7 +121,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .containerText {
@@ -137,7 +152,7 @@ body {
   align-items: center;
   gap: 20px;
   min-height: 100vh;
-  min-width: 300px;
+  width: 100vw;
 }
 .imgTulio {
   width: 90vw; /* Adjust the size as needed */
